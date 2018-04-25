@@ -1,7 +1,7 @@
 {
   "name": "cb-commons",
   "version": "1.0.0",
-  "description": "",
+  "description": "Utils library written in Typescript",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,10 +11,10 @@
     "url": "git+https://github.com/codebalancers/cb-commons.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "codebalancers",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/codebalancers/cb-commons/issues"
   },
-  "homepage": "https://github.com/codebalancers/cb-commons#readme"
+  "homepage": "https://github.com/codebalancers/cb-commons"
 }
