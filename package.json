@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Utils library written in Typescript",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/codebalancers/cb-commons.git"
@@ -16,5 +13,24 @@
   "bugs": {
     "url": "https://github.com/codebalancers/cb-commons/issues"
   },
-  "homepage": "https://github.com/codebalancers/cb-commons"
+  "homepage": "https://github.com/codebalancers/cb-commons",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jasmine": "~2.5.53",
+    "@types/jasminewd2": "~2.0.2",
+    "codelyzer": "~3.2.0",
+    "jasmine-core": "~2.6.2",
+    "jasmine-spec-reporter": "~4.1.0",
+    "karma": "~1.7.0",
+    "karma-chrome-launcher": "~2.1.1",
+    "karma-cli": "~1.0.1",
+    "karma-coverage-istanbul-reporter": "^1.2.1",
+    "karma-jasmine": "~1.1.0",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "tslint": "~5.7.0",
+    "typescript": "2.4.2"
+  }
 }
