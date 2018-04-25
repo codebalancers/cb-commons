@@ -1,0 +1,20 @@
+{
+  "name": "cb-commons",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codebalancers/cb-commons.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codebalancers/cb-commons/issues"
+  },
+  "homepage": "https://github.com/codebalancers/cb-commons#readme"
+}
