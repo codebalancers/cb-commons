@@ -1,4 +1,4 @@
-import { LangUtils } from './lang.utils';
+import { LangUtils } from '../src/lang.utils';
 
 describe('LangUtils', () => {
   it('null should not be defined', () => {

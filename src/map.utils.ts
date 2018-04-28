@@ -2,7 +2,7 @@ import { LangUtils } from './lang.utils';
 
 export class MapUtils {
 
-  public static buildMap<V>(obj): Map<string, V> {
+  public static buildMap<V>(obj: any): Map<string, V> {
     if (LangUtils.isUndefined(obj)) {
       return;
     }
@@ -10,7 +10,7 @@ export class MapUtils {
     const map = new Map<string, V>();
 
     Object.keys(obj).forEach(key => {
-      map.set(key, obj[key]);
+      map.set(key, obj[ key ]);
     });
 
     return map;

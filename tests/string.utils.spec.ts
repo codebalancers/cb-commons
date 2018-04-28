@@ -1,4 +1,4 @@
-import { StringUtils } from './string.utils';
+import { StringUtils } from '../src/string.utils';
 
 describe('StringUtils', () => {
   // -- test blank

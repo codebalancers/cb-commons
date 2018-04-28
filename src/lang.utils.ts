@@ -10,7 +10,7 @@ export class LangUtils {
    * @param val to be checked
    * @return {boolean} true if value is defined
    */
-  public static isDefined(val): boolean {
+  public static isDefined(val: any): boolean {
     return val !== null && val !== undefined;
   }
 
@@ -21,7 +21,7 @@ export class LangUtils {
    * @param otherVals
    * @return {boolean} true if any value is undefined, false otherwise
    */
-  public static isUndefined(val, ...otherVals): boolean {
+  public static isUndefined(val: any, ...otherVals: any[]): boolean {
     if (!LangUtils.isDefined(val)) {
       return true;
     }

@@ -1,4 +1,4 @@
-import { BeanUtils } from './bean.utils';
+import { BeanUtils } from '../src/bean.utils';
 
 describe('BeanUtils', () => {
   it('should retrieve value', () => {
