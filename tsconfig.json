@@ -2,9 +2,10 @@
   "compileOnSave": false,
   "compilerOptions": {
     "moduleResolution": "node",
-    "outDir": "./dist/out-tsc",
-    "sourceMap": true,
-    "declaration": false,
+    "outDir": "./dist",
+    "noImplicitAny": true,
+    "declaration": true,
+    "module": "es2015",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es5",
@@ -13,10 +14,8 @@
       "dom"
     ]
   },
-  "typeRoots": [
-    "node_modules/@types"
-  ],
   "include": [
-    "src/**/*.ts"
+    "src",
+    "tests"
   ]
 }
