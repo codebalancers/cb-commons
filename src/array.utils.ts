@@ -68,4 +68,17 @@ export class ArrayUtils {
       }
     }
   }
+
+  public static pushIfNotPresent<T>(array: T[], ...elems: T[]): void {
+    if (LangUtils.isUndefined(array)) {
+      return;
+    }
+
+    elems.forEach(elem => {
+      const existing = array.find(e => e === elem);
+      if (LangUtils.isUndefined(existing)) {
+        array.push(elem);
+      }
+    });
+  }
 }

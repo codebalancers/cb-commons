@@ -2,7 +2,6 @@
   "name": "cb-commons",
   "version": "1.0.1",
   "description": "Utils library written in Typescript",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/codebalancers/cb-commons.git"
@@ -38,6 +37,8 @@
   "files": [
     "dist"
   ],
+  "main": "index.d.ts",
+  "typings": "index.d.ts",
   "dependencies": {},
   "devDependencies": {
     "@types/jest": "^22.2.3",

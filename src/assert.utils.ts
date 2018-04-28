@@ -9,10 +9,14 @@ export class AssertUtils {
    * @param {string} errorMessage optional message for the thrown error
    */
   public static isDefined(object: any, errorMessage?: string): void {
-    console.assert(LangUtils.isDefined(object), errorMessage);
+    if (LangUtils.isUndefined(object)) {
+      throw Error(errorMessage);
+    }
   }
 
   public static isTrue(object: boolean, errorMessage?: string): void {
-    console.assert(object === true, errorMessage);
+    if (object === false) {
+      throw Error(errorMessage);
+    }
   }
 }
