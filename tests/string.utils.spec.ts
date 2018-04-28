@@ -44,12 +44,12 @@ describe('StringUtils', () => {
 
   // -- test empty
   it('null string should be empty', () => {
-    const testVar = null;
+    const testVar: any = null;
     expect(StringUtils.isEmpty(testVar)).toBeTruthy();
   });
 
   it('null string should not be not empty', () => {
-    const testVar = null;
+    const testVar: any = null;
     expect(StringUtils.isNotEmpty(testVar)).toBeFalsy();
   });
 

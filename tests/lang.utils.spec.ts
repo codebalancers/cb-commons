@@ -2,12 +2,12 @@ import { LangUtils } from '../src/lang.utils';
 
 describe('LangUtils', () => {
   it('null should not be defined', () => {
-    const testVar = null;
+    const testVar: any = null;
     expect(LangUtils.isDefined(testVar)).toBeFalsy();
   });
 
   it('undefined should not be defined', () => {
-    const testVar = undefined;
+    const testVar: any = undefined;
     expect(LangUtils.isDefined(testVar)).toBeFalsy();
   });
 
@@ -17,12 +17,12 @@ describe('LangUtils', () => {
   });
 
   it('null should be undefined', () => {
-    const testVar = null;
+    const testVar: any = null;
     expect(LangUtils.isUndefined(testVar)).toBeTruthy();
   });
 
   it('undefined should be undefined', () => {
-    const testVar = undefined;
+    const testVar: any = undefined;
     expect(LangUtils.isUndefined(testVar)).toBeTruthy();
   });
 
@@ -47,17 +47,17 @@ describe('LangUtils', () => {
   });
 
   it('null should not be an array', () => {
-    const testVar = null;
+    const testVar: any = null;
     expect(LangUtils.isArray(testVar)).toBeFalsy();
   });
 
   it('empty array should be an array', () => {
-    const testVar = [];
+    const testVar: any = [];
     expect(LangUtils.isArray(testVar)).toBeTruthy();
   });
 
   it('filled array should be an array', () => {
-    const testVar = [1];
+    const testVar = [ 1 ];
     expect(LangUtils.isArray(testVar)).toBeTruthy();
   });
 
