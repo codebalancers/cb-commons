@@ -1,6 +1,6 @@
 {
   "name": "cb-commons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Utils library written in Typescript",
   "main": "index.js",
   "repository": {
