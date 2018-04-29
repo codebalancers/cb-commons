@@ -12,5 +12,5 @@ $RECYCLE.BIN/
 .DS_Store
 Thumbs.db
 
-/dist
+/cb-commons
 /node_modules

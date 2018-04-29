@@ -14,7 +14,7 @@
   },
   "homepage": "https://github.com/codebalancers/cb-commons",
   "scripts": {
-    "clean": "rm -rf dists/",
+    "clean": "rm -rf cb-commons/",
     "compile": "tsc",
     "lint": "tslint --project tslint.json src/**/*.ts",
     "test": "jest",
@@ -35,10 +35,10 @@
     ]
   },
   "files": [
-    "dist"
+    "cb-commons"
   ],
-  "main": "index.d.ts",
-  "typings": "index.d.ts",
+  "main": "cb-commons/index.js",
+  "typings": "cb-commons/index.d.ts",
   "dependencies": {},
   "devDependencies": {
     "@types/jest": "^22.2.3",
