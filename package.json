@@ -1,5 +1,5 @@
 {
-  "name": "@codebalancers/cb-commons",
+  "name": "@codebalancers/commons",
   "version": "1.0.3",
   "description": "Utils library written in Typescript",
   "repository": {
