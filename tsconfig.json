@@ -5,7 +5,7 @@
     "outDir": "./cb-commons",
     "noImplicitAny": true,
     "declaration": true,
-    "module": "es2015",
+    "module": "commonjs",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "sourceMap": true,
