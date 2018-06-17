@@ -81,4 +81,8 @@ export class ArrayUtils {
       }
     });
   }
+
+  public static isNotEmpty(array: any[]): boolean {
+    return LangUtils.isDefined(array) && array.length > 0;
+  }
 }

@@ -31,4 +31,19 @@ export class BeanUtils {
 
     return tempObj;
   }
+
+  /**
+   * Provides the same function as getValueOf() but by means of an callback.
+   *
+   * @param {() => V} cb
+   * @return {V}
+   */
+  public static get<V>(cb: () => V): V {
+    try {
+      return cb();
+    } catch (e) {
+      // nop - hide exception
+      return undefined;
+    }
+  }
 }
