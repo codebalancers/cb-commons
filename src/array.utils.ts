@@ -43,13 +43,13 @@ export class ArrayUtils {
 
   public static getFirstElement<T>(array: T[]): T {
     if (LangUtils.isDefined(array) && array.length > 0) {
-      return array[0];
+      return array[ 0 ];
     }
   }
 
   public static getLastElement<T>(array: T[]): T {
     if (LangUtils.isDefined(array) && array.length > 0) {
-      return array[array.length - 1];
+      return array[ array.length - 1 ];
     }
   }
 
@@ -57,14 +57,14 @@ export class ArrayUtils {
     if (LangUtils.isDefined(array) && array.length > 0) {
       if (infinite === true) {
         if (index < 0) {
-          return array[index % array.length + array.length];
+          return array[ index % array.length + array.length ];
         } else {
-          return array[index % array.length];
+          return array[ index % array.length ];
         }
       }
 
       if (index >= 0 && index < array.length) {
-        return array[index];
+        return array[ index ];
       }
     }
   }
@@ -82,7 +82,33 @@ export class ArrayUtils {
     });
   }
 
+  /**
+   * The specified array is specified and not empty.
+   *
+   * @param {any[]} array
+   * @returns {boolean}
+   */
   public static isNotEmpty(array: any[]): boolean {
     return LangUtils.isDefined(array) && array.length > 0;
+  }
+
+  /**
+   * The specified array is specified and empty.
+   *
+   * @param {any[]} array
+   * @returns {boolean}
+   */
+  public static isEmpty(array: any[]): boolean {
+    return LangUtils.isDefined(array) && array.length === 0;
+  }
+
+  /**
+   * The specified array is empty or undefined/null.
+   *
+   * @param {any[]} array
+   * @returns {boolean}
+   */
+  public static isEmptyOrUndefined(array: any[]): boolean {
+    return !this.isNotEmpty(array);
   }
 }

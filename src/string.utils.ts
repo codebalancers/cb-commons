@@ -51,10 +51,10 @@ export class StringUtils {
     return null;
   }
 
-  public static trimToNull(value: any): string {
+  public static trimToNull(value: string): string {
     if (this.isBlank(value)) {
       return null;
     }
-    return value;
+    return value.trim();
   }
 }
