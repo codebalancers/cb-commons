@@ -1,6 +1,6 @@
 {
   "name": "@codebalancers/commons",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Utils library written in Typescript",
   "repository": {
     "type": "git",
