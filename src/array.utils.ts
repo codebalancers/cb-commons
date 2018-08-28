@@ -111,4 +111,17 @@ export class ArrayUtils {
   public static isEmptyOrUndefined(array: any[]): boolean {
     return !this.isNotEmpty(array);
   }
+
+  /**
+   * If specified array is undefined, an empty array will be returned. Otherwise, the original array is returned.
+   *
+   *  @param array to be tested
+   *  @return the original array or an empty array
+   */
+  public static ensureArray<T>(array: T[]): T[] {
+    if (LangUtils.isArray(array)) {
+      return array;
+    }
+    return [];
+  }
 }
