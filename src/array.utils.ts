@@ -113,12 +113,35 @@ export class ArrayUtils {
   }
 
   /**
+   * Remove duplicated element from an array that share an identical property. The first occurrence will be kept.
+   * E.g. const array = [ {key: 1, val: 'a'}, {key: 1, val: 'b'}, {key: 2, val: 'a'} ] can be filtered
+   * filterUnique(array, e => e.key) and will result in the array [ {key: 1, val: 'a'}, {key: 2, val: 'a'} ]
+   *
+   * @param {T[]} array initial array with duplicates
+   * @param {(arrayElem: T) => any} retrieval function to get the property that will be used as unique key
+   * @return {T[]} the filtered array
+   */
+  public static filterUnique<T>(array: T[], retrieval: (arrayElem: T) => any): T[] {
+    const existingKeys: any[] = [];
+
+    return array.filter(f => {
+      const key = retrieval(f);
+      if (existingKeys.indexOf(key) === -1) {
+        existingKeys.push(key);
+        return true;
+      } else {
+        return false;
+      }
+    });
+  }
+
+  /**
    * If specified array is undefined, an empty array will be returned. Otherwise, the original array is returned.
    *
    *  @param array to be tested
    *  @return the original array or an empty array
    */
-  public static ensureArray<T>(array: T[]): T[] {
+  public static ensure<T>(array: T[]): T[] {
     if (LangUtils.isArray(array)) {
       return array;
     }
